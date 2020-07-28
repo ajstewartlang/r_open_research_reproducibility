@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 &nbsp;&nbsp;
 
-Welcome to this set of workshops on R, Open Research, and Reproducibility. My name is Andrew Stewart and I am an Experimental Psychologist in the Division of Neuroscience and Experimental Psychology at the University of Manchester. You can contact me via [email](mailto:drandrewjstewart@gmail.com) or via direct message on [Twitter](https://twitter.com/ajstewart_lang). If you are interested in my academic activities, you can check out my website [here](https://ajstewartlang.netlify.app/).
+Welcome to this set of workshops on R, Open Research, and Reproducibility. My name is Andrew Stewart and I am an Experimental Psychologist in the Division of Neuroscience and Experimental Psychology at the University of Manchester and a Fellow of [The Software Sustainability Institute](https://www.software.ac.uk/). You can contact me via [email](mailto:drandrewjstewart@gmail.com) or via direct message on [Twitter](https://twitter.com/ajstewart_lang). If you are interested in my academic activities, you can check out my website [here](https://ajstewartlang.netlify.app/).
 
 The following introductory video (as with all the others in this set) is best viewed in fullscreen mode at 1080 resolution. I have recorded the audio with a podcasting microphone, so it's best listened to with headphones. YouTube generates subtitles automatically, so please turn those in if you'd find them useful. They are fairly accurate - although sometimes 'open research' gets mis-subtitled as 'urban research'!
 
