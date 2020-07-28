@@ -1,5 +1,5 @@
 navbar:
-  title: Andrew's R, Open Research, and Reproducibility for Psychology Workshops
+  title: Andrew's Workshops on R, Open Research, and Reproducibility
 
 output:
   html_document:
