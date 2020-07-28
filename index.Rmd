@@ -214,7 +214,7 @@ In this workshop we will build on Workshop 7 to explore Analysis of Covariance (
 
 # Workshop 10
 
-This workshop will introduce you to Binder, a tool for allowing you to reproduce your computational environment, as well as your code and data, and share all of these with a collaborator via sharing a simple web link.
+This workshop will introduce you to Binder, a tool for allowing you to reproduce your computational environment, as well as your code and data, and share all of these with a collaborator via a simple web link.
 
 <center>
 
