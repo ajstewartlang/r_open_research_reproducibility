@@ -235,4 +235,4 @@ The structure for this unit was very much inspired by the [Sharing At Short Noti
 
 The repo for each workshop can be accessed via the 'Improve this Workshop' link at the bottom of each workshop page. The workshops and this website were all written using [R Markdown](https://rmarkdown.rstudio.com/) and the website is hosted on [Netlify](https://www.netlify.com/) via continunous deployment from [this GitHub repository](https://github.com/ajstewartlang/MRes_BIOL63101).
 
-The source code for each of the Workshops above is licensed under the [MIT license](https://opensource.org/licenses/MIT), and the lecture content under [CC-BY](https://creativecommons.org/licenses/by/4.0/). 
+The source code for each of the Workshops above is licensed under the [MIT license](https://opensource.org/licenses/MIT), and the lecture content under [CC-BY](https://creativecommons.org/licenses/by/4.0/).
