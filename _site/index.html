@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Andrew Stewart, Email: drandrewjstewart@gmail.com, Twitter: @ajstewart_lang" />
+
+
+<title>Welcome</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Andrew's R, Open Research, and Reproducibility for Psychology Workshops</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Welcome</h1>
+<h4 class="author">Andrew Stewart, Email: <a href="mailto:drandrewjstewart@gmail.com" class="email">drandrewjstewart@gmail.com</a>, Twitter: <span class="citation">@ajstewart_lang</span></h4>
+
+</div>
+
+
+<p>  </p>
+<p>Welcome to the R, Open Research, and Reproducibility for Psychology set of workshops. My name is Andrew Stewart and I’m an Experimental Psychologist in the Division of Neuroscience and Experimental Psychology at the University of Manchester. You can contact me via <a href="mailto:drandrewjstewart@gmail.com">email</a> or via direct message on <a href="https://twitter.com/ajstewart_lang">Twitter</a>. If you are interested in my academic interests, you can check out my website <a href="https://ajstewartlang.netlify.app/">here</a>.</p>
+<p>The following introductory video (as with all the others in this set) is best viewed in fullscreen mode at 1080 resolution. I have recorded the audio with a podcasting microphone, so it’s best listened to with headphones. YouTube generates subtitles automatically, so please turn those in if you’d find them useful. They are fairly accurate - although sometimes ‘open research’ gets mis-subtitled as ‘urban research’!</p>
+<p>Click on the video below for a message from me and information about how this set of workshops will run.</p>
+<p>  </p>
+<center>
+<iframe width="560" height="315" src="https://youtube.com/embed/Dm9-31EcD3U" frameborder="0" allowfullscreen>
+</iframe>
+</center>
+<p>  </p>
+<div id="workshop-1" class="section level1">
+<h1>Workshop 1</h1>
+<div id="open-research-and-reproducibility" class="section level2">
+<h2>Open Research and Reproducibility</h2>
+<p>In this workshop I will first introduce you to the key concepts in open research, and talk about the so-called “replication crisis” in the Psychological, Biomedical, and Life Sciences that has resulted in the Open Research movement I will also discuss the importance of adopting reproducible research practices in your own research, and provide an introduction to various tools and processes you can incorporate into your own research workflows that will allow you to conduct reproducible research. To go to the first part of the workshop, just click on the image below.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/01_open_research_and_reproducibility/knitted_workshop/01_open_research_and_reproducibility.html"><img src="images/open_research.png" style="width:75.0%" /></a></p>
+<p>   </p>
+</center>
+<p>The second part of the workshop involves a very brief overview of open source software, the use of which is arguably key for researchers to be able to adopt open and reproducible research workflows. To view this second part, just click on the image below.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/24_open_source/knitted_workshop/24_open_source.html"><img src="images/open_source.png" style="width:75.0%" /></a></p>
+<p>   </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-2" class="section level1">
+<h1>Workshop 2</h1>
+<div id="starting-with-r-and-rstudio-desktop" class="section level2">
+<h2>Starting with R and RStudio Desktop</h2>
+<p>In this workshop I’ll introduce you to R (the language) and RStudio Desktop (the environment we use to interact with the language). I’ve also added a link to a great talk by the founder of RStudio, J.J. Alaire. At the end of the workshop I have put together a video which will show you how to run your first R script.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/02_starting_with_r/knitted_workshop/02_starting_with_r.html"><img src="images/starting_with_r.png" style="width:75.0%" /></a></p>
+<p>   </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-3" class="section level1">
+<h1>Workshop 3</h1>
+<div id="data-wrangling" class="section level2">
+<h2>Data Wrangling</h2>
+<p>In this workshop I will introduce you to a number of key packages known as the <code>Tidyverse</code> These packages contain a large number of functions for working with data in tidy format. By making our data wrangling reproducible (i.e., by coding it in R), we can easily re-run this stage of our analysis pipeline as new data gets added. Reproducibility of the data wrangling stage is a key part of the analysis process and often gets overlooked in terms of it being reproducible. There are two parts to this workshop. The first focuses on data wrangling/tidying. To go to this first part, just click on the image below.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/03_data_wrangling/knitted_workshop/03_data_wrangling.html"><img src="images/data_wrangling.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+<div id="summarising-your-data" class="section level2">
+<h2>Summarising Your Data</h2>
+<p>Once you have completed this first part and have your R script up and running, click on the image below for the second part where you’ll learn how to aggregate and summarise your data.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/04_summarising_your_data/knitted_workshop/04_summarising_your_data.html"><img src="images/summarising_your_data.png" style="width:75.0%" /></a></p>
+<p>   </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-4" class="section level1">
+<h1>Workshop 4</h1>
+<div id="data-visualisation" class="section level2">
+<h2>Data Visualisation</h2>
+<p>In this workshope we will explore the basics of Data Visualization using R. You’ll have the opportunity to write an R script on your own computer that will generate some nice data visualisations. Just click on the image below to start.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/06_data_visualisation/knitted_workshop/06_data_visualisation"><img src="images/data_vis.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-5" class="section level1">
+<h1>Workshop 5</h1>
+<div id="regression-part-1" class="section level2">
+<h2>Regression Part 1</h2>
+<p>In this workshop we will explore Simple Regression in the context of the General Linear Model (GLM). You will also have the opportunity to build some regression models where you predict an outcome variable on the basis of one predictor. You will also learn how to run model diagnostics to ensure you are not violating any key assumptions of regression.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/09_glm_regression_pt1/knitted_workshop/09_glm_regression_pt1.html"><img src="images/glm_regression_pt1.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-6" class="section level1">
+<h1>Workshop 6</h1>
+<div id="regression-part-2" class="section level2">
+<h2>Regression Part 2</h2>
+<p>In this workshop will explore Multiple Regression in the context of the General Linear Model (GLM). Multiple Regressions builds on Simple Regression, except that having one predictor (as is the case with Simple Regression) we will be dealing with multiple predictors. Again, you will have the opporunity to build some regression models and use various methods to decide which one is ‘best’. You will also learn how to run model disagnostics for these models as you did in the case of Simple Regression.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/10_glm_regression_pt2/knitted_workshop/10_glm_regression_pt2.html"><img src="images/glm_regression_pt2.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-7" class="section level1">
+<h1>Workshop 7</h1>
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<p>In this workshop I will show you how to generate a report in <code>.html</code> format using R Markdown. Reports written using R Markdown allow you to combine narrative that you’ve written alongwith R code chunks, and the output associated with those code chunks all in one <code>knitted</code> document. The assignments for this unit need to be produced using R Markdown.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/19_introduction_to_r_markdown/knitted_workshop/19_introduction_to_r_markdown.html"><img src="images/introduction_to_r_markdown.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-8" class="section level1">
+<h1>Workshop 8</h1>
+<div id="anova-part-1" class="section level2">
+<h2>ANOVA Part 1</h2>
+<p>In this workshop we will explore Analysis of Variance (ANOVA) in the context of model building in R for between participants designs, repeated measures designs, and factorial designs. You will learn how to use the <code>afex::</code> package for building models with Type III Sums of Squares, and the <code>emmeans::</code> package to conduct follow up tests to explore main effects and interactions. This workshop is intended to keep you occupied for <em>two</em> sessions (i.e., 4 hours in total).</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/11_glm_anova_pt1/knitted_workshop/11_glm_anova_pt1.html"><img src="images/glm_anova_pt1.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-9" class="section level1">
+<h1>Workshop 9</h1>
+<div id="anova-part-2" class="section level2">
+<h2>ANOVA Part 2</h2>
+<p>In this workshop we will build on Workshop 7 to explore Analysis of Covariance (ANCOVA). In this workshop we will also examine ANOVA and ANCOVA as special cases of regression and see how we can build both via a linear model. By then doing this yourselves, you wil hopefully be convinced that ANOVA and regression are really the same thing.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/12_glm_anova_pt2/knitted_workshop/12_glm_anova_pt2.html"><img src="images/glm_anova_pt2.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+</div>
+</div>
+<div id="workshop-10" class="section level1">
+<h1>Workshop 10</h1>
+<p>This workshop will introduce you to Binder, a tool for allowing you to reproduce your computational environment, as well as your code and data, and share all of these with a collaborator via sharing a simple web link.</p>
+<center>
+<p> </p>
+<p><a href="https://ajstewartlang.github.io/23_introduction_to_binder/knitted_workshop/23_introduction_to_binder.html"><img src="images/binder.png" style="width:75.0%" /></a></p>
+<p> </p>
+</center>
+<p>  </p>
+<div id="technical-details" class="section level2">
+<h2>Technical Details</h2>
+<p>All of the material in this workshop was created using open source where possible using an <a href="https://www.entroware.com/store/">Entroware Apollo laptop</a> running <a href="https://releases.ubuntu.com/20.04/">GNU/Linux distro Ubuntu 20.04 LTS (Focal Fossa)</a>. The audio was captured with a <a href="https://www.amazon.co.uk/Condenser-Microphone-Recording-Interface-Power-K669/dp/B01N034RTC/ref=sr_1_1_sspa?crid=141Z8ED4VGCVD&amp;dchild=1&amp;keywords=fifine+usb+podcast+condenser+microphone&amp;qid=1594989611&amp;sprefix=fifne+usb%2Caps%2C162&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFMzAxOE5DUDJIREwmZW5jcnlwdGVkSWQ9QTA4MzA2NjIxVU40MlhNMFNCTDhWJmVuY3J5cHRlZEFkSWQ9QTA5NDI2OTQxOFY0R002UVJBS1AzJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Fifine USB Podcasting microphone</a> and the video with a <a href="https://www.amazon.co.uk/Razer-Streaming-Adjustable-Brightness-Microphone/dp/B076QK6489/ref=sr_1_3?dchild=1&amp;keywords=razer+kiyo&amp;qid=1594989677&amp;sr=8-3">Razer Kiyo webcam</a>. The audio and video were recorded using <a href="https://obsproject.com/">Open Broadcast Software</a> and edited using <a href="https://shotcut.org/">Shotcut</a>. The R code was written using <a href="https://www.r-project.org/">R 3.6.3</a>, and run in the <a href="https://rstudio.com/products/rstudio/download/">RStudio Desktop IDE</a> version 1.3.959. Ubuntu 20.04 LTS (Focal Fossa), OBS, Shotcut, R, and RStudio Desktop are all <a href="https://en.wikipedia.org/wiki/Open-source_software">open source</a>.</p>
+<p>The structure for this unit was very much inspired by the <a href="https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/">Sharing At Short Notice</a> webinar by Alison Hill and Desirée De Leon.</p>
+<p>The repo for each workshop can be accessed via the ‘Improve this Workshop’ link at the bottom of each workshop page. The workshops and this website were all written using <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and the website is hosted on <a href="https://www.netlify.com/">Netlify</a> via continunous deployment from <a href="https://github.com/ajstewartlang/MRes_BIOL63101">this GitHub repository</a>.</p>
+<p>The source code for each of the Workshops above is licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>, and the lecture content under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
