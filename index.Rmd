@@ -233,6 +233,6 @@ All of the material in this workshop was created using open source where possibl
 
 The structure for this unit was very much inspired by the [Sharing At Short Notice](https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/) webinar by Alison Hill and Desirée De Leon.
 
-The repo for each workshop can be accessed via the 'Improve this Workshop' link at the bottom of each workshop page. The workshops and this website were all written using [R Markdown](https://rmarkdown.rstudio.com/) and the website is hosted on [Netlify](https://www.netlify.com/) via continunous deployment from [this GitHub repository](https://github.com/ajstewartlang/MRes_BIOL63101).
+The repo for each workshop can be accessed via the 'Improve this Workshop' link at the bottom of each workshop page. The workshops and this website were all written using [R Markdown](https://rmarkdown.rstudio.com/) and the website is hosted on [Netlify](https://www.netlify.com/) via continunous deployment from [this GitHub repository](https://github.com/ajstewartlang/r_open_research_reproducibility).
 
 The source code for each of the Workshops above is licensed under the [MIT license](https://opensource.org/licenses/MIT), and the lecture content under [CC-BY](https://creativecommons.org/licenses/by/4.0/).
