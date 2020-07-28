@@ -34,25 +34,13 @@ Click on the video below for a message from me and information about how this se
 # Workshop 1
 ## Open Research and Reproducibility
 
-In this workshop I will first introduce you to the key concepts in open research, and talk about the so-called "replication crisis" in the Psychological, Biomedical, and Life Sciences that has resulted in the Open Research movement I will also discuss the importance of adopting reproducible research practices in your own research, and provide an introduction to various tools and processes you can incorporate into your own research workflows that will allow you to conduct reproducible research. To go to the first part of the workshop, just click on the image below.
+In this workshop I will first introduce you to the key concepts in open research, and talk about the so-called "replication crisis" in the Psychological, Biomedical, and Life Sciences that has resulted in the Open Research movement I will also discuss the importance of adopting reproducible research practices in your own research, and provide an introduction to various tools and processes you can incorporate into your own research workflows that will allow you to conduct reproducible research. To go to this workshop, just click on the image below.
 
 <center>
 
 &nbsp;  
 
 [![](images/open_research.png){width=75%}](https://ajstewartlang.github.io/01_open_research_and_reproducibility/knitted_workshop/01_open_research_and_reproducibility.html)
-
-&nbsp; &nbsp;  
-
-</center>
-
-The second part of the workshop involves a very brief overview of open source software, the use of which is arguably key for researchers to be able to adopt open and reproducible research workflows. To view this second part, just click on the image below.
-
-<center>
-
-&nbsp;  
-
-[![](images/open_source.png){width=75%}](https://ajstewartlang.github.io/24_open_source/knitted_workshop/24_open_source.html)
 
 &nbsp; &nbsp;  
 
