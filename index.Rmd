@@ -154,7 +154,7 @@ In this workshop will explore Multiple Regression in the context of the General 
 # Workshop 7 
 ## R Markdown
 
-In this workshop I will show you how to generate a report in `.html` format using R Markdown. Reports written using R Markdown allow you to combine narrative that you've written alongwith R code chunks, and the output associated with those code chunks all in one `knitted` document. The assignments for this unit need to be produced using R Markdown.
+In this workshop I will show you how to generate a report in `.html` format using R Markdown. Reports written using R Markdown allow you to combine narrative that you've written alongwith R code chunks, and the output associated with those code chunks all in one `knitted` document. This workshop was written for my M.Res. class who need to submit their assignments as an .html document knitted using R Markdown.
 
 <center>
 
