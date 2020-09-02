@@ -103,7 +103,7 @@ Once you have completed this first part and have your R script up and running, c
 # Workshop 4
 ## Data Visualisation
 
-In this workshope we will explore the basics of Data Visualization using R. You'll have the opportunity to write an R script on your own computer that will generate some nice data visualisations. Just click on the image below to start.  
+In this workshop we will explore the basics of Data Visualization using R. You'll have the opportunity to write an R script on your own computer that will generate some nice data visualisations. Just click on the image below to start.  
 
 <center>
 
