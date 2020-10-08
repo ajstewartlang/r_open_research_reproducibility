@@ -19,19 +19,7 @@ Welcome to this set of workshops on R, Open Research, and Reproducibility. My na
 
 In the summer of 2020 I started recording these workshops as part of a couple of Masters level courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design. 
 
-The following introductory video (as with all the others in this set) is best viewed in fullscreen mode at 1080p resolution. I have recorded the audio with a podcasting microphone, so it's best listened to with headphones. YouTube generates subtitles automatically, so please turn those on if you'd find them useful. They are fairly accurate - although sometimes 'open research' gets mis-subtitled as 'urban research'!
-
-Click on the video below for a message from me and information about how this set of workshops will run. 
-
-&nbsp;&nbsp;
-
-<center>
-
-<iframe width="560" height="315" src="https://youtube.com/embed/BCsZ_IpmaGU" frameborder="0" allowfullscreen></iframe>
-
-</center>
-
-&nbsp;&nbsp;
+All the videos in these workshops are best viewed in fullscreen mode at 1080p resolution. I have recorded the audio with a podcasting microphone, so the sound will sound best with headphones. YouTube generates subtitles automatically, so please turn those on if you'd find them useful. They are fairly accurate - although sometimes 'open research' gets mis-subtitled as 'urban research'...
 
 # Workshop 1
 ## Open Research and Reproducibility
