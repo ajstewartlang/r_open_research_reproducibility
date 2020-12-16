@@ -210,7 +210,7 @@ This workshop will introduce you to Binder, a tool for allowing you to reproduce
 # Workshop 11
 ## Mixed Models Part 1
 
-In this workshop we will see how mixed models combine aspects of linear regression (for model fitting) while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of random effects in our mixed models, and see how mixed models can cope with unbalanced designs and missing data.
+In this workshop we will see how mixed models combine aspects of linear regression and ANOVA while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of multiple random effects in our models, and see how mixed models can cope with unbalanced designs and missing data.
 
 <center>
 
