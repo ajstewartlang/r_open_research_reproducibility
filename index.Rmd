@@ -13,10 +13,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-&nbsp;&nbsp;
-
-Welcome to this set of workshops on R, Open Research, and Reproducibility. I am an Experimental Psychologist in the Division of Neuroscience and Experimental Psychology at the University of Manchester and a Fellow of [The Software Sustainability Institute](https://www.software.ac.uk/). You can contact me via [email](mailto:drandrewjstewart@gmail.com) or via direct message on [Twitter](https://twitter.com/ajstewart_lang). If you are interested in my academic activities, you can check out my website [here](https://ajstewartlang.netlify.app/).
-
 In the summer of 2020 I started recording these workshops as part of a couple of Masters level courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design. 
 
 All the videos in these workshops are best viewed in fullscreen mode at 1080p resolution. I have recorded the audio with a podcasting microphone, so the sound will sound best with headphones. YouTube generates subtitles automatically, so please turn those on if you'd find them useful. They are fairly accurate - although sometimes 'open research' gets mis-subtitled as 'urban research'...
