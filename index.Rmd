@@ -1,6 +1,6 @@
 ---
 title: "R, Open Research, and Reproducibility"
-author: "Andrew Stewart, LinkedIn: https://www.linkedin.com/in/andrew-stewart-936033257/"
+author: "Andrew Stewart (Andrew.Stewart@manchester.ac.uk), University of Manchester. "
 date: ""
 output: 
   html_document:
@@ -13,7 +13,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In the summer of 2020 I started recording these workshops as part of a couple of courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design. 
+In the summer of 2020 I started recording these workshops as part of a couple of courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design.  
 
 # Workshop 1
 ## Open Research and Reproducibility
