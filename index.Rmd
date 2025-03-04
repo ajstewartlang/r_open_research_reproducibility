@@ -1,6 +1,6 @@
 ---
 title: "R, Open Research, and Reproducibility"
-author: "Andrew Stewart, Email: drandrewjstewart@gmail.com, Twitter: @ajstewart_lang"
+author: "Andrew Stewart, LinkedIn: https://www.linkedin.com/in/andrew-stewart-936033257/"
 date: ""
 output: 
   html_document:
@@ -13,9 +13,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In the summer of 2020 I started recording these workshops as part of a couple of Masters level courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design. 
-
-All the videos in these workshops are best viewed in fullscreen mode at 1080p resolution. I have recorded the audio with a podcasting microphone, so the sound will sound best with headphones. YouTube generates subtitles automatically, so please turn those on if you'd find them useful. They are fairly accurate - although sometimes 'open research' gets mis-subtitled as 'urban research'...
+In the summer of 2020 I started recording these workshops as part of a couple of courses I teach at the University of Manchester. I realised they might have broader interest so I decided to share a subset of them via this website. Hopefully you will find them useful. Workshop 1 provides a general introduction to Open Research and Reproducibility. The other workshops assume you have some training in undergraduate-level statistics and research design. 
 
 # Workshop 1
 ## Open Research and Reproducibility
@@ -187,23 +185,6 @@ In this workshop we will build on Workshop 7 to explore Analysis of Covariance (
 &nbsp;&nbsp;
 
 # Workshop 10
-## Binder
-
-This workshop will introduce you to Binder, a tool for allowing you to reproduce your computational environment, as well as your code and data, and share all of these with a collaborator via a simple web link.
-
-<center>
-
-&nbsp;  
-
-[![](images/binder.png){width=75%}](https://ajstewartlang.github.io/23_introduction_to_binder/knitted_workshop/23_introduction_to_binder.html)
-
-&nbsp;  
-
-</center>
-
-&nbsp;&nbsp;
-
-# Workshop 11
 ## Mixed Models Part 1
 
 In this workshop we will see how mixed models combine aspects of linear regression and ANOVA while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of multiple random effects in our models, and see how mixed models can cope with unbalanced designs and missing data.
@@ -220,7 +201,7 @@ In this workshop we will see how mixed models combine aspects of linear regressi
 
 &nbsp;&nbsp;
 
-# Workshop 12
+# Workshop 11
 ## Mixed Models Part 2
 
 In this workshop we will examine mixed models for factorial designs, and explore how to model non-continuous dependent variables (e.g., binary and ordinal outcome variables) using the `glmer()` family of mixed models.
